@@ -2,7 +2,7 @@
 set -e
 
 
-. templates/functions.sh
+source ./functions.sh
 
 source_version_info
 debian_changelog
@@ -12,48 +12,59 @@ debian_foo_basics
 basic_control lightdm
 debian_rules
 
-# lightdm
-# ==============
-[ -d lightdm ] && rm -r lightdm
-cp -a templates/lightdm .
+# debian
 
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
+    ./debtemplate/copyright \
+    > ./debian/copyright
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/get-template \
+    > ./debian/get-template
+chmod 755 ./debian/get-template
 
 ## GTK
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lightdm-gtk-settings.install \
-    > debian/${CODENAME_SAFE}-lightdm-gtk-settings.install
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lightdm-gtk-settings.postinst \
-    > debian/${CODENAME_SAFE}-lightdm-gtk-settings.postinst
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lightdm-gtk-settings.prerm \
-    > debian/${CODENAME_SAFE}-lightdm-gtk-settings.prerm
+    ./debtemplate/gtk-settings.install \
+    > ./debian/${CODENAME_SAFE}-lightdm-gtk-settings.install
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/lightdm/lightdm-gtk-greeter.conf \
-    > lightdm/lightdm-gtk-greeter.conf
+    ./debtemplate/gtk-settings.postinst \
+    > ./debian/${CODENAME_SAFE}-lightdm-gtk-settings.postinst
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/gtk-settings.prerm \
+    > ./debian/${CODENAME_SAFE}-lightdm-gtk-settings.prerm
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./template/gtk-greeter.conf \
+    > ./lightdm-gtk-greeter.conf
 
 ## KDE
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lightdm-kde-settings.install \
-    > debian/${CODENAME_SAFE}-lightdm-kde-settings.install
+    ./debtemplate/kde-settings.install \
+    > ./debian/${CODENAME_SAFE}-lightdm-kde-settings.install
+
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lightdm-kde-settings.postinst \
-    > debian/${CODENAME_SAFE}-lightdm-kde-settings.postinst
+    ./debtemplate/kde-settings.postinst \
+    > ./debian/${CODENAME_SAFE}-lightdm-kde-settings.postinst
+
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/debian/lightdm-kde-settings.prerm \
-    > debian/${CODENAME_SAFE}-lightdm-kde-settings.prerm
+    ./debtemplate/kde-settings.prerm \
+    > ./debian/${CODENAME_SAFE}-lightdm-kde-settings.prerm
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    templates/lightdm/lightdm-kde-greeter.conf \
-    > lightdm/lightdm-kde-greeter.conf
+    ./template/lightdm-kde-greeter.conf \
+    > lightdm-kde-greeter.conf
 
 
 exit 0

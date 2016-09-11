@@ -7,10 +7,9 @@ Uploaders: Torsten Wohlfarth <towo@siduction.org>,
 Build-Depends: debhelper (>= 9),
                dh-systemd
 Standards-Version: 3.9.8
-Homepage: http://bugs.siduction.org/projects/siduction-settings
-Vcs-Git: git://git.siduction.org/code/siduction-settings.git
-Vcs-Browser: http://git.siduction.org/?p=code/siduction-settings.git;a=summary
-
+Homepage: https://git.siduction.org/extra/settings-@FLAVOUR@
+Vcs-Git: https://git.siduction.org/extra/settings-@FLAVOUR@.git
+Vcs-Browser: https://git.siduction.org/extra/settings-@FLAVOUR@.git
 
 Package: @CODENAME_SAFE@-@FLAVOUR@-gtk-settings
 Architecture: all
@@ -18,7 +17,7 @@ Pre-Depends: lightdm,
              lightdm-gtk-greeter
 Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in installed mode
- add description here
+ Meta-Package add description here
 
 Package: @CODENAME_SAFE@-@FLAVOUR@-gtk-livesettings
 Architecture: all
@@ -30,14 +29,14 @@ Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in live mode
  Meta-Package
 
-# LightDM KDE
+
 Package: @CODENAME_SAFE@-@FLAVOUR@-kde-settings
 Architecture: all
 Pre-Depends: lightdm,
              lightdm-kde-greeter
 Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in installed mode
- add description here
+ Meta-Package add description here
 
 Package: @CODENAME_SAFE@-@FLAVOUR@-kde-livesettings
 Architecture: all
@@ -47,4 +46,4 @@ Pre-Depends: libpam-systemd,
              @CODENAME_SAFE@-lightdm-kde-settings
 Depends: ${misc:Depends}
 Description: @DISPLAY@ KDE settings in live mode
- add description here
+ Meta-Package add description here
