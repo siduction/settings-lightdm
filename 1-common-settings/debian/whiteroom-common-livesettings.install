@@ -1,7 +1,0 @@
-common/sbin/*              sbin/
-common/livesettings        usr/bin/
-common/user-home-settings  usr/share/whiteroom-common-livesettings
-common/all-users-settings  usr/share/whiteroom-common-livesettings
-common/common-cheatcodes   usr/share/whiteroom-common-livesettings
-common/live/etc/*          etc/
-

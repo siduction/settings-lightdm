@@ -1,5 +1,0 @@
-kde/etc/*                  usr/share/whiteroom-kde-settings/etc
-kde/share                  usr/share/whiteroom-kde-settings/
-kde/*.js                   usr/share/whiteroom-kde-settings/
-
-kde/org.siduction.desktop  usr/share/plasma/look-and-feel
