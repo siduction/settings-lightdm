@@ -22,7 +22,7 @@ function source_version_info {
 # eventually cleanup old builds
 function cleanup_old_builds {
     if [ -f ./debian/rules ]; then
-        debuild -d clean
+        debclean -d
         rm debian/rules
         echo "old builds cleaned up, run bootstrap again!"
         return 1
