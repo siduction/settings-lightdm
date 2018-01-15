@@ -1,7 +1,3 @@
 ## ignored editor stuff
 *~
 *.save
-
-# ignored debian $foo
-/debian
-
