@@ -1,4 +1,4 @@
-unknown (unknown+nmu1) UNRELEASED; urgency=medium
+@CODENAME_SAFE@-@FLAVOUR@-settings (@VERSION@+nmu1) @DISTRIBUTION@ UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * preparing 21.1 release c-blues
