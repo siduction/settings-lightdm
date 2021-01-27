@@ -1,11 +1,17 @@
-@CODENAME_SAFE@-@FLAVOUR@-settings (@VERSION@+nmu1) @DISTRIBUTION@ UNRELEASED; urgency=medium
+c-blues-lightdm-settings (21.1.0~1) UNRELEASED; urgency=medium
+
+  * give that baby a name  
+
+ -- Hendrik Lehmbruch <hendrikl@siduction.org>  Wed, 27 Jan 2021 21:20:56 +0100
+
+c-blues-lightdm-settings (21.1.0+nmu1) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * preparing 21.1 release c-blues
 
  -- Hendrik Lehmbruch <hendrikl@siduction.org>  Wed, 27 Jan 2021 21:15:32 +0100
 
-@CODENAME_SAFE@-@FLAVOUR@-settings (@VERSION@) @DISTRIBUTION@; urgency=medium
+c-blues-lightdm-settings (15.1.0) UNRELEASED; urgency=medium
 
   * Initial Release.
 
