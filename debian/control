@@ -1,4 +1,4 @@
-Source: @CODENAME_SAFE@-@FLAVOUR@-settings
+Source: c-blues-lightdm-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -11,7 +11,7 @@ Homepage: https://git.siduction.org/extra/settings-@FLAVOUR@
 Vcs-Git: https://git.siduction.org/extra/settings-@FLAVOUR@.git
 Vcs-Browser: https://git.siduction.org/extra/settings-@FLAVOUR@.git
 
-Package: @CODENAME_SAFE@-@FLAVOUR@-gtk-settings
+Package: c-blues-lightdm-gtk-settings
 Architecture: all
 Pre-Depends: lightdm,
              lightdm-gtk-greeter
@@ -19,9 +19,9 @@ Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in installed mode
  Meta-Package add description here
 
-Package: @CODENAME_SAFE@-@FLAVOUR@-gtk-livesettings
+Package: c-blues-lightdm-gtk-livesettings
 Architecture: all
-Pre-Depends: @CODENAME_SAFE@-@FLAVOUR@-gtk-settings,
+Pre-Depends: c-blues-lightdm-gtk-settings,
              libpam-systemd,
              gnome-icon-theme,
              gnome-icon-theme-symbolic
@@ -30,7 +30,7 @@ Description: @DISPLAY@ GTK settings in live mode
  Meta-Package
 
 
-Package: @CODENAME_SAFE@-@FLAVOUR@-kde-settings
+Package: c-blues-lightdm-kde-settings
 Architecture: all
 Pre-Depends: lightdm,
              lightdm-kde-greeter
@@ -38,12 +38,12 @@ Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in installed mode
  Meta-Package add description here
 
-Package: @CODENAME_SAFE@-@FLAVOUR@-kde-livesettings
+Package: c-blues-lightdm-kde-livesettings
 Architecture: all
 Pre-Depends: libpam-systemd,
              gnome-icon-theme,
              gnome-icon-theme-symbolic,
-             @CODENAME_SAFE@-lightdm-kde-settings
+             c-blues-lightdm-kde-settings
 Depends: ${misc:Depends}
 Description: @DISPLAY@ KDE settings in live mode
  Meta-Package add description here

@@ -1,8 +1,18 @@
-c-blues-lightdm-settings (21.1.0~1) UNRELEASED; urgency=medium
+c-blues-lightdm-settings (21.1.0-1) unstable; urgency=medium
 
+  * fix debian/control (or maybe not, should be reviseted after release
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sat, 30 Jan 2021 17:52:56 +0100
+
+c-blues-lightdm-settings (21.1.0) unstable; urgency=medium
+
+  [ Hendrik Lehmbruch ]
   * give that baby a name  
 
- -- Hendrik Lehmbruch <hendrikl@siduction.org>  Wed, 27 Jan 2021 21:20:56 +0100
+  [ Torsten Wohlfarth ]
+  * build and upload for release
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sat, 30 Jan 2021 17:29:20 +0100
 
 c-blues-lightdm-settings (21.1.0+nmu1) UNRELEASED; urgency=medium
 
