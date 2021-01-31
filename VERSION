@@ -1,7 +1,7 @@
 #!/bin/bash
 
-WALLPAPER=c-blues
-CODENAME_SAFE=c-blues
+WALLPAPER=cblues
+CODENAME_SAFE=cblues
 DESCRIPTION=c-blues
 VERSION=2021.1.0
 DISTRIBUTION=unstable
