@@ -1,4 +1,4 @@
-Source: cblues-lightdm-settings
+Source: farewell-lightdm-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -11,7 +11,7 @@ Homepage: https://git.siduction.org/extra/settings-@FLAVOUR@
 Vcs-Git: https://git.siduction.org/extra/settings-@FLAVOUR@.git
 Vcs-Browser: https://git.siduction.org/extra/settings-@FLAVOUR@.git
 
-Package: cblues-lightdm-gtk-settings
+Package: farewell-lightdm-gtk-settings
 Architecture: all
 Pre-Depends: lightdm,
              lightdm-gtk-greeter
@@ -19,9 +19,9 @@ Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in installed mode
  Meta-Package add description here
 
-Package: cblues-lightdm-gtk-livesettings
+Package: farewell-lightdm-gtk-livesettings
 Architecture: all
-Pre-Depends: cblues-lightdm-gtk-settings,
+Pre-Depends: farewell-lightdm-gtk-settings,
              libpam-systemd,
              gnome-icon-theme,
              gnome-icon-theme-symbolic
@@ -30,7 +30,7 @@ Description: @DISPLAY@ GTK settings in live mode
  Meta-Package
 
 
-Package: cblues-lightdm-kde-settings
+Package: farewell-lightdm-kde-settings
 Architecture: all
 Pre-Depends: lightdm,
              lightdm-kde-greeter
@@ -38,12 +38,12 @@ Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in installed mode
  Meta-Package add description here
 
-Package: cblues-lightdm-kde-livesettings
+Package: farewell-lightdm-kde-livesettings
 Architecture: all
 Pre-Depends: libpam-systemd,
              gnome-icon-theme,
              gnome-icon-theme-symbolic,
-             cblues-lightdm-kde-settings
+             farewell-lightdm-kde-settings
 Depends: ${misc:Depends}
 Description: @DISPLAY@ KDE settings in live mode
  Meta-Package add description here
