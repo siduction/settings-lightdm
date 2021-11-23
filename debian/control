@@ -1,4 +1,4 @@
-Source: farewell-lightdm-settings
+Source: 2021-03-lightdm-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -11,7 +11,7 @@ Homepage: https://git.siduction.org/extra/settings-@FLAVOUR@
 Vcs-Git: https://git.siduction.org/extra/settings-@FLAVOUR@.git
 Vcs-Browser: https://git.siduction.org/extra/settings-@FLAVOUR@.git
 
-Package: farewell-lightdm-gtk-settings
+Package: 2021-03-lightdm-gtk-settings
 Architecture: all
 Pre-Depends: lightdm,
              lightdm-gtk-greeter
@@ -19,9 +19,9 @@ Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in installed mode
  Meta-Package add description here
 
-Package: farewell-lightdm-gtk-livesettings
+Package: 2021-03-lightdm-gtk-livesettings
 Architecture: all
-Pre-Depends: farewell-lightdm-gtk-settings,
+Pre-Depends: 2021-03-lightdm-gtk-settings,
              libpam-systemd,
              gnome-icon-theme,
              gnome-icon-theme-symbolic
@@ -30,7 +30,7 @@ Description: @DISPLAY@ GTK settings in live mode
  Meta-Package
 
 
-Package: farewell-lightdm-kde-settings
+Package: 2021-03-lightdm-kde-settings
 Architecture: all
 Pre-Depends: lightdm,
              lightdm-kde-greeter
@@ -38,12 +38,12 @@ Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in installed mode
  Meta-Package add description here
 
-Package: farewell-lightdm-kde-livesettings
+Package: 2021-03-lightdm-kde-livesettings
 Architecture: all
 Pre-Depends: libpam-systemd,
              gnome-icon-theme,
              gnome-icon-theme-symbolic,
-             farewell-lightdm-kde-settings
+             2021-03-lightdm-kde-settings
 Depends: ${misc:Depends}
 Description: @DISPLAY@ KDE settings in live mode
  Meta-Package add description here
