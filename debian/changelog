@@ -1,3 +1,10 @@
+wintersky-lightdm-settings (2021.2.99-1) unstable; urgency=medium
+
+  * prepare wintersky release
+  * remove lightdm-kde-settings, lightdm-kde-greeter does not exist anymore
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Mon, 20 Dec 2021 13:39:48 +0100
+
 farewell-lightdm-settings (2021.2.0-1) unstable; urgency=medium
 
   * set final version

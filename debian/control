@@ -28,22 +28,3 @@ Pre-Depends: wintersky-lightdm-gtk-settings,
 Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in live mode
  Meta-Package
-
-
-Package: wintersky-lightdm-kde-settings
-Architecture: all
-Pre-Depends: lightdm,
-             lightdm-kde-greeter
-Depends: ${misc:Depends}
-Description: @DISPLAY@ GTK settings in installed mode
- Meta-Package add description here
-
-Package: wintersky-lightdm-kde-livesettings
-Architecture: all
-Pre-Depends: libpam-systemd,
-             gnome-icon-theme,
-             gnome-icon-theme-symbolic,
-             wintersky-lightdm-kde-settings
-Depends: ${misc:Depends}
-Description: @DISPLAY@ KDE settings in live mode
- Meta-Package add description here
