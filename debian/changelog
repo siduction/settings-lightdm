@@ -1,3 +1,9 @@
+wintersky-lightdm-settings (2021.3.0-1) unstable; urgency=medium
+
+  * wintersky release
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Wed, 22 Dec 2021 14:35:03 +0100
+
 wintersky-lightdm-settings (2021.2.99-1) unstable; urgency=medium
 
   * prepare wintersky release
