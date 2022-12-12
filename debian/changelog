@@ -1,3 +1,9 @@
+mow-lightdm-settings (2022.1.0-1) unstable; urgency=medium
+
+  * prepare Masters of War release
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Mon, 12 Dec 2022 22:32:48 +0100
+
 wintersky-lightdm-settings (2021.3.0-1) unstable; urgency=medium
 
   * wintersky release
