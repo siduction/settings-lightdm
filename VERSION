@@ -1,9 +1,9 @@
 #!/bin/bash
 
-WALLPAPER=wintersky
-CODENAME_SAFE=wintersky
-DESCRIPTION=wintersky
-VERSION=2021.3.0
+WALLPAPER=giants
+CODENAME_SAFE=giants
+DESCRIPTION=giants
+VERSION=2022.1
 DISTRIBUTION=unstable
 
 # Gdm3 and Gnome settings

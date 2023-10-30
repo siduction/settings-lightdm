@@ -1,17 +1,16 @@
-Source: wintersky-lightdm-settings
+Source: giants-lightdm-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
 Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
 Build-Depends: debhelper (>= 9),
-               dh-systemd
 Standards-Version: 3.9.8
 Homepage: https://git.siduction.org/extra/settings-@FLAVOUR@
 Vcs-Git: https://git.siduction.org/extra/settings-@FLAVOUR@.git
 Vcs-Browser: https://git.siduction.org/extra/settings-@FLAVOUR@.git
 
-Package: wintersky-lightdm-gtk-settings
+Package: giants-lightdm-gtk-settings
 Architecture: all
 Pre-Depends: lightdm,
              lightdm-gtk-greeter
@@ -19,9 +18,9 @@ Depends: ${misc:Depends}
 Description: @DISPLAY@ GTK settings in installed mode
  Meta-Package add description here
 
-Package: wintersky-lightdm-gtk-livesettings
+Package: giants-lightdm-gtk-livesettings
 Architecture: all
-Pre-Depends: wintersky-lightdm-gtk-settings,
+Pre-Depends: giants-lightdm-gtk-settings,
              libpam-systemd,
              gnome-icon-theme,
              gnome-icon-theme-symbolic
