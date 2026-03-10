@@ -1,9 +1,9 @@
 #!/bin/bash
 
-WALLPAPER=giants
-CODENAME_SAFE=giants
-DESCRIPTION=giants
-VERSION=2022.1
+WALLPAPER=Big-Crime
+CODENAME_SAFE=Big-Crime
+DESCRIPTION=lightdm theme for Big-Crime
+VERSION=2026.1
 DISTRIBUTION=unstable
 
 # Gdm3 and Gnome settings
