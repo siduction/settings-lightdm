@@ -1,7 +1,7 @@
 Source: Big-Crime-lightdm-settings
 Section: misc
 Priority: optional
-Maintainer: Alf Gaida <agaida@siduction.org>
+Maintainer: Torsten Wohlfarth <towo@siduction.org>
 Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
 Build-Depends: debhelper (>= 9),
