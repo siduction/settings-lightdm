@@ -1,7 +1,7 @@
 #!/bin/bash
 
 WALLPAPER=Big-Crime
-CODENAME_SAFE=Big-Crime
+CODENAME_SAFE=big-crime
 DESCRIPTION=lightdm theme for Big-Crime
 VERSION=2026.1
 DISTRIBUTION=unstable
