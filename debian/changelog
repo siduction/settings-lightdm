@@ -1,3 +1,9 @@
+big-crime-lightdm-settings (2026.1.0-1) unstable; urgency=medium
+
+  * for new siduction release
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Mon, 11 May 2026 13:14:06 +0200
+
 giants-lightdm-settings (2023.1.0-2) unstable; urgency=medium
 
   * remove dh-systemd from depends, doesn't exist anymore
