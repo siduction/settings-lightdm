@@ -13,7 +13,7 @@ Package: big-crime-lightdm-gtk-settings
 Architecture: all
 Pre-Depends: lightdm,
              lightdm-gtk-greeter
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, greybird-gtk-theme
 Description: @DISPLAY@ GTK settings in installed mode
  Meta-Package add description here
 

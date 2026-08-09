@@ -1,3 +1,10 @@
+big-crime-lightdm-settings (2026.1.0-2) unstable; urgency=medium
+
+  * fix wallpaper
+  * add greybird-gtk-theme as depend
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 09 Aug 2026 12:35:13 +0200
+
 big-crime-lightdm-settings (2026.1.0-1) unstable; urgency=medium
 
   * for new siduction release
